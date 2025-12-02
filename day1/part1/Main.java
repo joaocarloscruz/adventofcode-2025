@@ -1,6 +1,6 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -13,19 +13,8 @@ public class Main {
 
     }
 
-    protected static List<String> readInput(String filePath) throws IOException {
-        List<String> lines = new ArrayList<>();
-        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                lines.add(line);
-            }
-        }
-        return lines;
-    }
-
     public static int part1() throws IOException {
-        List<String> lines = readInput("day1/part1/input.txt");
+        List<String> lines = Files.readAllLines(Path.of("day1/part2/input.txt"));        
         int password = 0;
         int dial = 50;
         for (String line : lines) {
