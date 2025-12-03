@@ -35,5 +35,5 @@ Adding up all the invalid IDs in this example produces 1227775554.
 What do you get if you add up all of the invalid IDs?
 
 ## Solution 
-At first glance this seems a hard problem to solve as it would be impossible to iterate all values inside of each range, as we have huge ranges. Turns out that the intervals are quite small, meaning we can simply iterate all values inside of the range and convert them back to string and check if the first half is equal to the second, or skip if the length is odd.
+At first glance this seems a hard problem to solve as it would be impossible to iterate all values inside of each range, as we have huge ranges. Turns out that the intervals are small enough to be ran, meaning we can simply iterate all values inside of the range and convert them back to string and check if the first half is equal to the second, or skip if the length is odd.
 We need to use long as some values are bigger than 32-bit.
