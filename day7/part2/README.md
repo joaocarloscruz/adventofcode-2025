@@ -68,4 +68,4 @@ Apply the many-worlds interpretation of quantum tachyon splitting to your manifo
 
 ## Solution     
 The immediate thought I had from reading this problem was recursion. I implemented a basic logic that reuses what I had from part1 and just calls the method twice when splitting and once when going down, we then add the timeline to total when we reach the bottom. 
-This solution was not efficient at all and I spent a lot of time trying to run the input but it didn't give me an answer. This can be improved by calculating all paths just once and then using them in the recursion.
+This solution was not efficient at all and I spent a lot of time trying to run the input but it didn't give me an answer. This can be improved by calculating all paths just once as we're recursing, and then check the number of paths from a point onwards. 
